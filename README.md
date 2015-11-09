@@ -86,7 +86,7 @@ id  teacher_name    id      name     teacher_id
 ```
 
 
-##Right Join
+##Right Outer Join
 
 ```
 SELECT * from teachers
@@ -108,3 +108,21 @@ NULL     NULL	     6       Alexis       NULL
 ```
 
 ##Full Join
+
+```
+SELECT * from teachers
+   FULL OUTER JOIN students on teachers.id = students.teacher_id;
+```
+
+This Join can be referred to as a FULL OUTER JOIN or a FULL JOIN. This query will return all of the records from both tables, joining records from the left table (teachers) that match records from the right table (students).
+
+```
+id    teacher_name   id      name     teacher_id               
+---   ------------  ----    ------    -----------
+1	     Steven		 2       Bob          1
+1	     Steven	  	 1       Dave         1	 
+1	     Steven	  	 3       Jess         1
+2	     Joe	     5       Rob          1
+2	     Joe	     4       Sara         1
+NULL    NULL	   NULL     NULL      NULL		              
+```
