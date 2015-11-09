@@ -75,14 +75,14 @@ This query will return all of the records in the left table (teachers) regardles
 ###Results
 
 ```
-id  teacher_name   id      name     teacher_id               
---- ------------  ----    ------    -----------
-1	   Steven		     2       Bob          1
-1	   Steven	  	   1       Dave         1	 
-1	   Steven	  	   3       Jess         1
-2	   Joe	     	   5       Rob          1
-2	   Joe	     	   4       Sara         1
-3	   Jeff	    	   NULL    NULL         NULL		              
+id  teacher_name    id      name     teacher_id               
+--- ------------   ----    ------    -----------
+1	   Steven		 2       Bob          1
+1	   Steven	  	 1       Dave         1	 
+1	   Steven	  	 3       Jess         1
+2	   Joe	     	 5       Rob          1
+2	   Joe	     	 4       Sara         1
+3	   Jeff	    	 NULL    NULL         NULL		              
 ```
 
 
@@ -99,12 +99,12 @@ This query will return all of the records in the right table (students) regardle
 ```
 id    teacher_name   id      name     teacher_id               
 ---   ------------  ----    ------    -----------
-1	     Steven		     2       Bob          1
-1	     Steven	  	   1       Dave         1	 
-1	     Steven	  	   3       Jess         1
-2	     Joe	     	   5       Rob          1
-2	     Joe	     	   4       Sara         1
-NULL   NULL	    	   6       Alexis       NULL		              
+1	     Steven		 2       Bob          1
+1	     Steven	  	 1       Dave         1	 
+1	     Steven	  	 3       Jess         1
+2	     Joe	     5       Rob          1
+2	     Joe	     4       Sara         1
+NULL   NULL	    	 6       Alexis       NULL		              
 ```
 
 ##Full Join
